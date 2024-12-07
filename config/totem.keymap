@@ -92,10 +92,10 @@
         colemak_base {
             label = "c_base";
             bindings = <
-           &kp Q  &kp W  &kp F        &kp P          &kp G    &kp J  &kp L        &kp U      &kp Y    &kp INS
-           &kp A  &kp R  &kp S        &kp T          &kp D    &kp H  &kp N        &kp E      &kp I    &kp O
-&kp LSHFT  &kp Z  &kp X  &kp C        &kp V          &kp B    &kp K  &kp M        &kp COMMA  &kp DOT  &kp ESCAPE  &kp LSHFT
-                         &lt 5 ENTER  &kp BACKSPACE  &mo 1    &mo 2  &lt 4 SPACE  &lt 3 TAB
+           &kp Q  &kp W           &kp F        &kp P           &kp G    &kp J  &kp L            &kp U        &kp Y            &kp INS
+           &kp A  &mt R LEFT_ALT  &mt S LCTRL  &mt T LEFT_GUI  &kp D    &kp H  &mt N RIGHT_GUI  &mt E RCTRL  &mt I RIGHT_ALT  &kp O
+&kp LSHFT  &kp Z  &kp X           &kp C        &kp V           &kp B    &kp K  &kp M            &kp COMMA    &kp DOT          &kp ESCAPE  &kp LSHFT
+                                  &lt 5 ENTER  &kp BACKSPACE   &mo 1    &mo 2  &lt 4 SPACE      &lt 3 TAB
             >;
         };
 
