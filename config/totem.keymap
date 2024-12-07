@@ -95,14 +95,14 @@
            &kp Q  &kp W  &kp F        &kp P          &kp G    &kp J  &kp L        &kp U      &kp Y    &kp INS
            &kp A  &kp R  &kp S        &kp T          &kp D    &kp H  &kp N        &kp E      &kp I    &kp O
 &kp LSHFT  &kp Z  &kp X  &kp C        &kp V          &kp B    &kp K  &kp M        &kp COMMA  &kp DOT  &kp ESCAPE  &kp LSHFT
-                         &lt 5 ENTER  &kp BACKSPACE  &mo 1    &mo 2  &lt 3 SPACE  &lt 4 TAB
+                         &lt 5 ENTER  &kp BACKSPACE  &mo 1    &mo 2  &lt 4 SPACE  &lt 3 TAB
             >;
         };
 
-        layer1 {
+        brackets {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "layer1";
+            label = "brackets";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -119,14 +119,14 @@
                 &kp N1            &kp N2    &kp N3          &kp N4                &kp N5           &kp N6            &kp N7                 &kp N8           &kp N9             &kp N0
                 &kp SINGLE_QUOTE  &kp LBKT  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
 &kp LEFT_SHIFT  &caps_word        &none     &kp HOME        &none                 &kt LEFT_GUI     &none             &none                  &kp SEMICOLON    &kp COLON          &to 0              &kp RIGHT_SHIFT
-                                            &none           &trans                &none            &kp TAB           &to 5                  &kp ENTER
+                                            &none           &trans                &none            &kp TAB           &to 1                  &kp ENTER
             >;
         };
 
-        layer2 {
+        symbols_rest {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "layer2";
+            label = "sym_rest";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -140,10 +140,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTERISK    &kp SQT   &kp DQT
-       &none     &none   &kp QUESTION  &kp PIPE  &kp BACKSLASH    &kp SLASH  &kp EQUAL  &kp MINUS       &kp PLUS  &to 0
-&none  &none     &none   &none         &none     &none            &kp GRAVE  &kp TILDE  &kp UNDERSCORE  &none     &to 0    &none
-                         &none         &to 4     &kp DELETE       &none      &trans     &none
+       &none         &none      &none      &none     &none            &none      &none      &none      &none     &none
+       &kp QUESTION  &kp MINUS  &kp UNDER  &kp PIPE  &kp BACKSLASH    &kp SLASH  &kp EQUAL  &kp MINUS  &kp PLUS  &kp SINGLE_QUOTE
+&none  &none         &none      &none      &none     &none            &none      &none      &none      &none     &to 0             &none
+                                &none      &to 2     &kp DELETE       &none      &trans     &none
+            >;
+        };
+
+        symbols_top_layer {
+            label = "sym_top";
+            bindings = <
+       &none     &none   &none     &none       &none          &none      &none          &none         &none      &none
+       &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp GRAVE  &none
+&none  &none     &none   &none     &none       &none          &none      &none          &none         &none      &to 0  &none
+                         &none     &to 3       &none          &none      &none          &none
             >;
         };
 
@@ -164,10 +174,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none     &kp UP_ARROW  &none      &none    &none    &kp F7   &kp F8   &kp F9  &none
-       &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none    &kp F4   &kp F5   &kp F6  &to 0
-&none  &none  &none     &none         &none      &none    &none    &kp F1   &kp F2   &kp F3  &to 0  &none
-                        &none         &none      &none    &kp F10  &kp F11  &kp F12
+       &none  &none     &kp UP_ARROW  &none      &none    &kp F10  &kp F7  &kp F8  &kp F9  &none
+       &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &kp F11  &kp F4  &kp F5  &kp F6  &none
+&none  &none  &none     &none         &none      &none    &kp F12  &kp F1  &kp F2  &kp F3  &to 0  &none
+                        &none         &to 4      &none    &none    &none   &none
             >;
         };
 
@@ -189,9 +199,9 @@
 
             bindings = <
        &none  &none  &none  &none  &none    &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
-       &none  &to 4  &to 5  &none  &none    &kp PAGE_UP    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &to 0
-&none  &none  &to 1  &to 2  &to 3  &none    &kp PAGE_DOWN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 0  &none
-                     &none  &none  &none    &none          &none            &kp KP_NUMBER_0
+       &none  &to 5  &to 6  &none  &none    &kp PAGE_UP    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_N0
+&none  &none  &to 1  &to 2  &to 4  &none    &kp PAGE_DOWN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 0      &none
+                     &none  &none  &none    &none          &to 5            &none
             >;
         };
 
@@ -215,7 +225,7 @@
            &kp Q  &kp W           &kp E        &kp R           &kp T    &kp Y  &kp U            &kp I                &kp O            &kp P
            &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_GUI F  &kp G    &kp H  &mt RIGHT_GUI J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt INSERT RIGHT_GUI
 &kp LSHFT  &kp Z  &kp X           &kp C        &kp V           &kp B    &kp N  &kp M            &kp COMMA            &kp DOT          &to 0                 &kp LSHFT
-                                  &lt 5 ENTER  &kp BACKSPACE   &mo 1    &mo 2  &lt 3 SPACE      &lt 4 TAB
+                                  &lt 5 ENTER  &kp BACKSPACE   &mo 1    &mo 2  &lt 4 SPACE      &lt 5 TAB
             >;
         };
     };
