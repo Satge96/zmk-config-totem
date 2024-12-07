@@ -53,6 +53,21 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <20 31>;
         };
+
+        ae {
+            bindings = <&none>;
+            key-positions = <10 11>;
+        };
+
+        oe {
+            bindings = <&none>;
+            key-positions = <11 12>;
+        };
+
+        ue {
+            bindings = <&none>;
+            key-positions = <12 13>;
+        };
     };
 
     macros {
@@ -191,7 +206,7 @@
 
             bindings = <
        &none  &none  &none  &none  &none    &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
-       &none  &to 4  &to 5  &to 6  &none    &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &to 0
+       &none  &to 4  &to 0  &to 5  &none    &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &to 0
 &none  &none  &to 1  &to 2  &to 3  &none    &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 0  &none
                      &to 0  &none  &none    &none  &none            &kp KP_NUMBER_0
             >;
@@ -199,22 +214,22 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        layer_5 {
-            label = "layer5";
-            bindings = <
-           &kp Q  &kp W  &kp E         &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P
-           &kp A  &kp S  &kp D         &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &to 0
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &to 0  &kp LSHFT
-                         &kp LEFT_ALT  &mo 1  &kp BSPC    &kp SPACE  &mo 2  &kp RCTRL
-            >;
-        };
-
         layer_6 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &ae     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        coiemak {
+            label = "colemak";
+            bindings = <
+           &kp Q  &kp W  &kp F        &kp P          &kp G    &kp J  &kp L        &kp U      &kp Y    &kp INS
+           &kp A  &kp R  &kp S        &kp T          &kp D    &kp H  &kp N        &kp E      &kp I    &kp O
+&kp LSHFT  &kp Z  &kp X  &kp C        &kp V          &kp B    &kp K  &kp M        &kp COMMA  &kp DOT  &kp ESCAPE  &kp LSHFT
+                         &lt 5 ENTER  &kp BACKSPACE  &mo 1    &mo 2  &lt 3 SPACE  &lt 4 TAB
             >;
         };
     };
