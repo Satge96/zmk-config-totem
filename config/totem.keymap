@@ -92,10 +92,10 @@
         colemak_base {
             label = "c_base";
             bindings = <
-           &kp Q  &kp W            &kp F               &kp P           &kp G    &kp J  &kp L            &kp U        &kp Y           &kp INS
-           &kp A  &mt RIGHT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_GUI T  &kp D    &kp H  &mt RIGHT_GUI N  &mt RCTRL E  &mt LEFT_ALT I  &kp O
-&kp LSHFT  &kp Z  &kp X            &kp C               &kp V           &kp B    &kp K  &kp M            &kp COMMA    &kp DOT         &kp ESCAPE  &kp LSHFT
-                                   &lt 5 ENTER         &kp BACKSPACE   &mo 1    &mo 2  &lt 4 SPACE      &lt 3 TAB
+           &kp Q  &kp W        &kp F            &kp P           &kp G    &kp J  &kp L            &kp U           &kp Y               &kp INS
+           &kp A  &mt RCTRL R  &mt RIGHT_ALT S  &mt LEFT_GUI T  &kp D    &kp H  &mt RIGHT_GUI N  &mt LEFT_ALT E  &mt LEFT_CONTROL I  &kp O
+&kp LSHFT  &kp Z  &kp X        &kp C            &kp V           &kp B    &kp K  &kp M            &kp COMMA       &kp DOT             &kp ESCAPE  &kp LSHFT
+                               &lt 5 ENTER      &kp BACKSPACE   &mo 1    &mo 2  &lt 4 SPACE      &lt 3 TAB
             >;
         };
 
@@ -201,7 +201,7 @@
        &none  &none  &none  &none  &none    &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
        &none  &to 5  &to 6  &none  &none    &kp PAGE_UP    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_N0
 &none  &none  &to 1  &to 2  &to 4  &none    &kp PAGE_DOWN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 0      &none
-                     &none  &none  &none    &none          &to 5            &none
+                     &none  &none  &none    &none          &to 5            &kp KP_N0
             >;
         };
 
