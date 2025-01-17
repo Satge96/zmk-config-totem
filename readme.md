@@ -27,7 +27,7 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - connect the left half of the TOTEM to your PC, press reset twice
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
-- repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+- repeat this process with the right half and the dongle
 
 Dongle Code from:
 https://github.com/BertPlasschaert/zmk-config-totem-dongle
@@ -45,3 +45,8 @@ https://github.com/BertPlasschaert/zmk-config-totem-dongle
 8. Press Left Reset Button
 9. Wait 20 seconds
 10. Flash Dongle with Firmware
+
+## Nice!View Screen
+This Version supports a Nice!View screen for the dongle. With the support of [mctechnology17s repo](https://github.com/mctechnology17/zmk-dongle-display-view).
+The wiring is shown below.
+![TOTEM layout](/docs/images/Wiring_image.jpeg)
