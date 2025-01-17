@@ -49,4 +49,4 @@ https://github.com/BertPlasschaert/zmk-config-totem-dongle
 ## Nice!View Screen
 This Version supports a Nice!View screen for the dongle. With the support of [mctechnology17s repo](https://github.com/mctechnology17/zmk-dongle-display-view).
 The wiring is shown below.
-
+![TOTEM layout](/docs/images/Wiring_image.jpeg)
