@@ -12,7 +12,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define NAV  1
@@ -92,10 +91,10 @@
         colemak_base {
             label = "c_base";
             bindings = <
-           &kp Q  &kp W        &kp F            &kp P           &kp G    &kp J  &kp L            &kp U           &kp Y               &kp INS
-           &kp A  &mt RCTRL R  &mt RIGHT_ALT S  &mt LEFT_GUI T  &kp D    &kp H  &mt RIGHT_GUI N  &mt LEFT_ALT E  &mt LEFT_CONTROL I  &kp O
-&kp LSHFT  &kp Z  &kp X        &kp C            &kp V           &kp B    &kp K  &kp M            &kp COMMA       &kp DOT             &kp ESCAPE  &kp LSHFT
-                               &lt 5 ENTER      &kp BACKSPACE   &to 1    &mo 2  &lt 4 SPACE      &lt 3 TAB
+           &kp Q  &kp W        &kp F            &kp P           &kp G          &kp J      &kp L            &kp U           &kp Y               &kp INS
+           &kp A  &mt RCTRL R  &mt RIGHT_ALT S  &mt LEFT_GUI T  &kp D          &kp H      &mt RIGHT_GUI N  &mt LEFT_ALT E  &mt LEFT_CONTROL I  &kp O
+&kp LSHFT  &kp Z  &kp X        &kp C            &kp V           &kp B          &kp K      &kp M            &kp COMMA       &kp DOT             &kp ESCAPE  &kp LSHFT
+                               &mo 5            &kp BACKSPACE   &lt 1 ENTER    &lt 2 TAB  &lt 4 SPACE      &mo 3
             >;
         };
 
